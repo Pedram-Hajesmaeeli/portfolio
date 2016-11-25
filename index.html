@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+<body>
+<header id="nav-holder">
+    <nav class="nav navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">
+                    <div class="fa fa-xl fa-code" id="logo"></div>
+                </a><!-- /.navbar-brand-->
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav text-center navbar-nav navbar-right">
+                    <li><a href="#about-box">ABOUT</a></li>
+                    <li><a href="#portfolio-box">PORTFOLIO</a></li>
+                    <li><a href="#contact-box">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- /.collapse navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
+<div class="container" id="content">
+    <div>
+        <div class="row box" id="about-box">
+            <div class="col-md-8">
+                <div class="center-v-container">
+                    <div class="text-center">
+                        <p class="padded-p text-center">
+                            Web developer, mainly focused on backend and interested in developing REST APIs,
+                            also having done some front-end stuff.
+                        </p>
+                        <div class="divider">
+                            <hr>
+                        </div>
+
+                        <div class="text-center"><h3>Web developer - Programmer</h3></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4 text-center">
+                <div><img id="avatar" src="images/profile.jpg" alt="" class="img-responsive" id="avatar"></div>
+            </div>
+        </div>
+
+        <div class="row box" id="portfolio-box">
+            <div class="text-center col-bold"><h1>PORTFOLIO</h1></div>
+            <div class="divider">
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="overlay">
+                        <a href="http://senfi.orgmail.ir" class="thumbnail" target='_blank'>
+                            <img src="images/senfi.png" alt="Online advertisement">
+                        </a>
+                        <a href="http://senfi.orgmail.ir" class="overlay-effect" target='_blank'>
+                            <div class="plus-overlay-bg"></div>
+                            <div class="fa fa-plus plus-overlay-text"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="overlay">
+                        <a href="http://sms.elenoon.ir" class="thumbnail" target='_blank'>
+                            <img src="https://s21.postimg.org/iuy6enelz/smspanel.png" alt="Online sms panel">
+                        </a>
+                        <a href="http://sms.elenoon.ir" class="overlay-effect" target='_blank'>
+                            <div class="plus-overlay-bg"></div>
+                            <div class="fa fa-plus plus-overlay-text"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="overlay">
+                        <a href="https://cafebazaar.ir/app/ir.idek.boom/?l=en" class="thumbnail" target='_blank'>
+                            <img src="images/boom.png" alt="Online advertisement">
+                        </a>
+                        <a href="https://cafebazaar.ir/app/ir.idek.boom/?l=en" class="overlay-effect" target='_blank'>
+                            <div class="plus-overlay-bg"></div>
+                            <div class="fa fa-plus plus-overlay-text"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="overlay">
+                        <a href="http://pooten.ir" class="thumbnail" target='_blank'>
+                            <img src="https://s21.postimg.org/ixi21hi9j/pooten.png" alt="pooten.png">
+                        </a>
+                        <a href="http://pooten.ir" class="overlay-effect" target='_blank'>
+                            <div class="plus-overlay-bg"></div>
+                            <div class="fa fa-plus plus-overlay-text"></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row box" id="contact-box">
+            <div class="text-center col-bold"><h1>CONTACT ME</h1></div>
+            <div class="divider">
+                <hr>
+            </div>
+
+            <div class="col-md-6 contact-col">
+                <form>
+                    <div class="form-group text-center">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-lg fa-user-circle"></i></div>
+                            <input type="text" class="form-control" id="name-input" placeholder="Name">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-lg fa-envelope"></i></div>
+                            <input type="text" class="form-control" id="mail-input" placeholder="Email">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-lg fa-mobile"></i></div>
+                            <input type="text" class="form-control" id="phone-input" placeholder="Phone">
+                        </div>
+
+                        <textarea placeholder="Message" class="form-control" rows="5"></textarea>
+
+                        <button type="submit" class="btn btn-default pull-left">
+                            <i class="fa fa-send fa-lg"></i>
+                            <span> Send</span>
+                        </button>
+
+                        div.clearfix
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 contact-col">
+                <p>
+                    You can use the form on the left to send me messages and we can discuss different things
+                    through email afterwards :)
+                    <br>
+                </p>
+                <p>Please don't use it for spam:) I'll answer as soon as I can.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<footer class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <h3>ABOUT THIS PAGE</h3>
+                <p>
+                    Made with <i class="fa fa-coffee fa-lg"></i> and <i class="fa fa-music fa-lg"></i>
+                    by <span>Pedram Hajesmaeeli</span>
+
+                </p>
+            </div>
+
+            <div class="col-sm-6 text-center">
+                <h3>AROUND THE WEB</h3>
+                <a href="https://ir.linkedin.com/in/phajesmaeeli" target='_blank'>
+                    <button class="btn btn-default">
+                        <div class="fa fa-lg fa-linkedin"></div>
+                    </button>
+                </a>
+
+
+                <a href="https://github.com/Pedram-Hajesmaeeli" target='_blank'>
+                    <button class="btn btn-default">
+                        <div class="fa fa-lg fa-github"></div>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright text-center">
+        <h1><i class="fa fa-lg fa-copyright"></i> All rights reserved!</h1>
+    </div>
+</footer>
+
+</body>
+</html>
